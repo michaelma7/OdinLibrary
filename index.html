@@ -21,10 +21,31 @@
         <div class="content">
             <h3>Available Books</h3>
             <button class="addBook">Add New Book</button>
-            <!-- add modal and dialogs here for form activation -->
-            <form>
+            <dialog>
+                <form id="newBook">
+                    <div class="inputs">
+                        <label for="title">Title:</label>
+                        <input id="title" name="title" type="text" />
+                        
+                        <label for="author">Author:</label>
+                        <input id="author" name="author" type="text" />
+                        
+                        <label for="pages">Pages:</label>
+                        <input id="pages" name="pages" type="number" />
 
-            </form>
+                        <label for="read">Read?:</label>
+                        <select id="read" name="read" >
+                            <option value="none" selected disabled hidden>Select</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="buttons">
+                        <button class="create">Create New Book</button>
+                        <button class="close" value="cancel" formmethod="dialog">Cancel</button>
+                    </div>
+                </form>
+            </dialog>
             <!-- table of available books -->
             <table>
                 <th>
@@ -36,6 +57,9 @@
                     <td>Actions</td>
                     <!-- Button for removing book. add modal confirmation dialog -->
                 </th>
+                <tr>
+
+                </tr>
             </table>
         </div>
     </div>    
