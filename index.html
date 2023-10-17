@@ -36,8 +36,8 @@
                         <label for="read">Read?:</label>
                         <select id="read" name="read" >
                             <option value="none" selected disabled hidden>Select</option>
-                            <option value="yes">Yes</option>
-                            <option value="no">No</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
                         </select>
                     </div>
                     <div class="buttons">
@@ -47,19 +47,18 @@
                 </form>
             </dialog>
             <!-- table of available books -->
-            <table>
-                <th>
-                    <td>Title</td>
-                    <td>Author</td>
-                    <td>Pages</td>
-                    <td>Read</td>
-                    <!-- add read checkmark to toggle read status in obj -->
-                    <td>Actions</td>
-                    <!-- Button for removing book. add modal confirmation dialog -->
-                </th>
-                <tr>
-
-                </tr>
+            <table class="library">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Pages</th>
+                        <th>Read</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                <tbody class="rows">
+                </tbody>
             </table>
         </div>
     </div>    
