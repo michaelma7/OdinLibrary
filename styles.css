@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.main, .header, #newBook, .content {
+    display: flex;
+}
+
+.logo, .about, .inputs {
+    display: grid;
+}
+
+.main, .inputs, #newBook, .about, .content {
+    gap: 15px;
+}
+
+.main {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    background-color: #dad7cd;
+}
+
+.header {
+    background-color: rgb(223, 157, 77);
+    justify-content: space-between;
+    flex: 1;
+    padding: 10px;
+}
+
+.logo {
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    color: rgb(224, 224, 192);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+svg {
+    fill: #14213d;
+    height: 80%;
+}
+
+.about {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(224, 224, 192);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.content {
+    flex: 1;
+    flex-direction: column;
+    align-self: center;
+    background-color: rgb(224, 224, 192);
+    border-radius: 10px;
+    padding: 30px;
+    color: #142955;
+    margin: 10px;
+}
+
+.addBook {
+    align-self: flex-start;
+}
+
+dialog, button {
+    border:none;
+    border-radius: 10px;
+}
+
+dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+}
+
+input, select {
+    font-size: 16px;
+    padding: 3px;
+}
+
+#newBook {
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputs {
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #142955;
+    column-gap: 0;
+}
+
+button {
+    padding: 10px 15px;
+    font-weight: bold;
+    color: rgb(231, 231, 231);
+    background-color: rgb(223, 157, 77);
+}
+
+.close, .delete {
+    background-color: rgb(187, 29, 29);
+}
+
+.create {
+    background-color: rgb(31, 175, 31);
+}
+
+.library {
+    border-collapse: collapse;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #dad7cd;
+    color:#142955;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #142955;
+    color: white;
+}
+
+th {
+    padding: 5px 10px;
+    border-right: black solid 2px;
+}
+
+td {
+    text-align: center;
+    padding: 5px 5px;
+    border-right: black solid 2px;
+}

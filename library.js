@@ -67,7 +67,3 @@ function removeBook(button) {
     let row = button.parentNode.parentNode;
     row.parentNode.removeChild(row);
 }
-addBookToLibrary('romanov', 'simon', 1000, 'No');
-addBookToLibrary('Sowrd of Islam', 'Tom Holland', 1000, 'No');
-addBookToLibrary('The Sunlit Man', 'Brandon Sanderson', 800, 'Yes');
-addBookToLibrary('pain', 'itch', 500, 'Yes');
